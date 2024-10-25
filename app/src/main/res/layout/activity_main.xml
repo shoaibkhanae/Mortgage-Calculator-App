@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_amount"
@@ -68,6 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/et_height"
             android:text="@string/calculate_repayment"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/til_interest"
             android:layout_marginTop="@dimen/basic_margin"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +90,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            tools:text="0.00"
+            android:textStyle="bold"
             android:layout_marginTop="@dimen/basic_margin"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintTop_toBottomOf="@id/tv_monthly_payment_description"
@@ -109,12 +113,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            tools:text="0.00"
+            android:textStyle="bold"
             android:textAppearance="?attr/textAppearanceHeadline6"
             android:layout_marginTop="@dimen/basic_margin"
             app:layout_constraintTop_toBottomOf="@id/tv_total_payment_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
