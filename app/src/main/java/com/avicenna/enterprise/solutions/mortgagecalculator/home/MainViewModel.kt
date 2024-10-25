@@ -1,4 +1,4 @@
-package com.avicenna.enterprise.solutions.mortgagecalculator
+package com.avicenna.enterprise.solutions.mortgagecalculator.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,14 +1,12 @@
-package com.avicenna.enterprise.solutions.mortgagecalculator
+package com.avicenna.enterprise.solutions.mortgagecalculator.home
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.avicenna.enterprise.solutions.mortgagecalculator.databinding.ActivityMainBinding
-import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -81,4 +79,9 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    companion object {
+        fun getCallingIntent(context: Context): Intent {
+            return Intent(context, MainActivity::class.java)
+        }
+    }
 }
